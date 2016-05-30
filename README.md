@@ -9,4 +9,4 @@ This respository contains various files and resources meant for 9597 H2 Computin
 ### [Initial] - 30/05/2016
 - Created repository
 - Added PC1 and PC2
-- Added Stack and Queue ADT intial algorithms
+- Added Stack and Queue ADT initial algorithms
