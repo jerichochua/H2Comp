@@ -6,6 +6,10 @@ This respository contains various files and resources meant for 9597 H2 Computin
 
 ## History
 
+### [0.1] - 01/06/2016
+- Added circular queue
+- Slight modification to non-circular queue code
+
 ### [Initial] - 30/05/2016
 - Created repository
 - Added PC1 and PC2
