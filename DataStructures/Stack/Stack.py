@@ -1,25 +1,31 @@
-class Stack: #Stack implementation - Data added to rear of list
-    def __init__(self): #Initialise
-        self.data = [] #Initialise empty list
+#Stack ADT V2
 
-    def __str__(self):
-        text = ""
-        for i in range(len(self.data)-1, -1, -1):
-            text = text + "\n" + "{0}".format(self.data[i])
-        text = text + "\n---------------"
-        return text
+class Stack():
+    def __init__(self):
+        self.data = []
 
-    def push(self, data): #Push data into stack
+    def isEmpty(self):
+        """Returns True if stack is empty, False otherwise"""
+        return len(self.data) == 0
+
+    def push(self, data):
+        """Push data into stack"""
         self.data.append(data)
 
-    def pop(self): #Pop data out of stack
-        self.data.pop()
+    def pop(self):
+        """Pop top data out of stack"""
+        return self.data.pop()
 
-    def peek(self): #Look at top item of stack
+    def peek(self):
+        """Returns top of stack"""
         return self.data[len(self.data)-1]
 
-    def size(self): #Return size of stack
+    def size(self):
+        """Returns size of stack"""
         return len(self.data)
 
-    def isEmpty(self): #Check if stack is empty
-        return len(self.data) == 0
+    def display(self):
+        """Displays stack"""
+        for i in range(len(self.data)-1, -1, -1):
+            print("|{0:^18}|".format(self.data[i]))
+        print("-"*20)
