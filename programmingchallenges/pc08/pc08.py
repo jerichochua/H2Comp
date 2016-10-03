@@ -1,6 +1,7 @@
-#Programming Challenge 8: Fruits Linked List
+# Programming Challenge 8: Fruits Linked List
+# A-Levels 2014 Q3
 
-#Task 2
+# Task 2
 class ListNode:
     def __init__(self):
         self.DataValue = str("")
@@ -29,7 +30,7 @@ class LinkedList:
         self.Node[len(self.Node)-1].setDataValue(str(""))
         self.Node[len(self.Node)-1].setPointerValue(int(0))
 
-        #Initialise values for Start and NextFree
+        # Initialise values for Start and NextFree
         self.Start = int(0)
         self.NextFree = int(1)
 
@@ -59,17 +60,17 @@ class LinkedList:
             self.Node[self.NextFree].setPointerValue(0)
             self.NextFree = Temp
         else:
-            #Traverse the list - starting at Start to find
-            #the position at which to insert the new item
+            # Traverse the list - starting at Start to find
+            # the position at which to insert the new item
             Temp = self.Node[self.NextFree].getPointerValue()
 
             if NewItem < self.Node[self.Start].getDataValue():
-                #New item will become the start of the list
+                # New item will become the start of the list
                 self.Node[self.NextFree].setPointerValue(self.Start)
                 self.Start = self.NextFree
                 self.NextFree = Temp
             else:
-                #The new item is not at the start of the list
+                # The new item is not at the start of the list
                 Previous = 0
                 Current = self.Start
                 Found = False
@@ -81,7 +82,7 @@ class LinkedList:
                         self.NextFree = Temp
                         Found = True
                     else:
-                        #Move on to the next node
+                        # Move on to the next node
                         Previous = Current
                         Current = self.Node[Current].getPointerValue()
 
@@ -94,7 +95,7 @@ class LinkedList:
         """Performs an in-order traversal of the linked list"""
         if Index != 0:
             print(self.Node[Index].getDataValue())
-            #Follow the pointer to the next data item in the linked list
+            # Follow the pointer to the next data item in the linked list
             self.TraversalInOrder(self.Node[Index].getPointerValue())
 
     def Traversal(self):
@@ -111,7 +112,7 @@ class LinkedList:
         """Calls the TraversalInReverseOrder procedure"""
         self.TraversalInReverseOrder(self.Start)
         
-#Task 1
+# Task 1
 def main():
     fruitsList = LinkedList()
     fruitsList.Initialise()

@@ -1,5 +1,6 @@
-#Programming Challenge 6: Bar Chart
-#Task 2
+# Programming Challenge 6: Bar Chart
+# A-Levels 2013 Q4
+# Task 2
 
 def barChart2():
     X = []

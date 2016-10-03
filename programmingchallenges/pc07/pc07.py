@@ -1,4 +1,4 @@
-#Programming Challenge 7: Game Linked List
+# Programming Challenge 7: Game Linked List
 
 class Node:
     def __init__(self, playerID, score):
@@ -150,7 +150,7 @@ class LinkedList:
             current = current.getPointer()
         print(current.getplayerID(), current.getScore())
 
-    #Task 3
+    # Task 3
     def validateRankRange(self, rankrange):
         """Validates rank range"""
         lower, upper = rankrange.split("-")
@@ -177,7 +177,7 @@ class LinkedList:
                     rankCount[currentRank] = rankCount.get(currentRank, 0) + 1
                 current = current.getPointer()
 
-            #Display rank and player ID
+            # Display rank and player ID
             print("{0:^25}".format("Ranking"))
             print("-"*25)
             print("{0:^5}{1}{2:^20}".format("Rank", "|", "Player ID"))
@@ -185,7 +185,7 @@ class LinkedList:
                 print("{0:^5}{1}{2:^20}".format(data[0], "|", data[1]))
             print()
 
-            #Display rank count
+            # Display rank count
             print("{0:^25}".format("Rank Count"))
             print("-"*25)
             for rank in range(lower, upper+1):

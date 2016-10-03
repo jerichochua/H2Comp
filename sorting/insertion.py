@@ -1,4 +1,4 @@
-#Insertion Sort
+# Insertion Sort
 
 myList = [94, 12, 53, 25, 36, 75]
 

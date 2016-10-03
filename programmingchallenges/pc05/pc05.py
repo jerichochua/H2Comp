@@ -1,6 +1,7 @@
-#Programming Challenge 5: Print Queue
+# Programming Challenge 5: Print Queue
+# A-Levels 2015 Q4
 
-#Task 2
+# Task 2
 def ValidateUserID(ThisUserID):
     if len(ThisUserID) != 9:
         return 1
@@ -10,7 +11,7 @@ def ValidateUserID(ThisUserID):
         return 3
     return 0
 
-#Task 3
+# Task 3
 class printQueue:
     def __init__(self, limit):
         self.data = [["" for i in range(3)] for j in range(limit)]
@@ -47,7 +48,7 @@ class printQueue:
         for i in range(len(self.data)):
             print("{0}. {1}".format(i+1, self.data[i]))
 
-#Task 4
+# Task 4
 def menu():
     maxqueueSize = 5
     Room14 = printQueue(maxqueueSize)

@@ -1,4 +1,4 @@
-#Bubble Sort
+# Bubble Sort
 
 myList = [94, 12, 53, 25, 36, 75]
 

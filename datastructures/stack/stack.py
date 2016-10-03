@@ -1,4 +1,4 @@
-#Stack ADT V2
+# Stack ADT V2
 
 class Stack():
     def __init__(self):
